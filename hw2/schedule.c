@@ -79,7 +79,6 @@ PUBLIC int do_stop_scheduling(message *m_ptr)
 	}
     	rmp = &schedproc[proc_nr_n];
 	rmp->flags = 0; /*&= ~IN_USE;*/
-    	do_lottery();
 	return OK;
 }
 
