@@ -100,7 +100,7 @@ shape_ptr interpreter::make_ellipse (param begin, param end) {
 
 shape_ptr interpreter::make_circle (param begin, param end) {
    DEBUGF ('f', range (begin, end));
-   return make_shared<circle> (GLfloat());
+   return make_shared<circle> (from_string<GLfloat>(*begin));
 }
 
 shape_ptr interpreter::make_polygon (param begin, param end) {
